@@ -12,6 +12,11 @@ di-render sebelumnya di assets/ menjadi satu PNG deterministik 1024x1024.
 Urutan lapisannya: kertas, grain, ilustrasi, bingkai dan garis pemisah,
 lalu teks. Tidak ada timestamp dan tidak ada random, jadi setiap run
 menghasilkan byte yang sama persis.
+
+v7 (23 Nov): label nomor cerita 1-33 dihapus atas perintah Grey; ilustrasi
+digambar ulang total gaya kartun editorial detail (adegan + figur ekspresif).
+Koordinat tempel teks feature/small disesuaikan +2px karena ubin teks kini
+mulai 2px lebih rendah tanpa lencana nomor.
 """
 
 import os
@@ -30,20 +35,20 @@ TEXT = [
     ("t_ticker.png", 219, 97),
     ("t_stats.png", 28, 122),
     ("t_regions.png", 24, 164),
-    ("t_feat0.png", 24, 188),
-    ("t_feat1.png", 681, 188),
-    ("t_small0_0.png", 24, 406),
-    ("t_small0_1.png", 188, 406),
-    ("t_small0_2.png", 352, 406),
-    ("t_small0_3.png", 516, 406),
-    ("t_small0_4.png", 680, 406),
-    ("t_small0_5.png", 844, 406),
-    ("t_small1_0.png", 24, 542),
-    ("t_small1_1.png", 188, 542),
-    ("t_small1_2.png", 352, 542),
-    ("t_small1_3.png", 516, 542),
-    ("t_small1_4.png", 680, 542),
-    ("t_small1_5.png", 844, 542),
+    ("t_feat0.png", 24, 190),
+    ("t_feat1.png", 681, 190),
+    ("t_small0_0.png", 24, 408),
+    ("t_small0_1.png", 188, 408),
+    ("t_small0_2.png", 352, 408),
+    ("t_small0_3.png", 516, 408),
+    ("t_small0_4.png", 680, 408),
+    ("t_small0_5.png", 844, 408),
+    ("t_small1_0.png", 24, 544),
+    ("t_small1_1.png", 188, 544),
+    ("t_small1_2.png", 352, 544),
+    ("t_small1_3.png", 516, 544),
+    ("t_small1_4.png", 680, 544),
+    ("t_small1_5.png", 844, 544),
     ("t_crypto.png", 24, 678),
     ("t_map.png", 24, 748),
     ("t_timeline.png", 24, 900),
