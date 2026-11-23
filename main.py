@@ -1,17 +1,17 @@
-"""Entri make.fun news-image-20261123: halaman depan koran 34 berita.
+"""Entri make.fun news-image-20261123: halaman depan koran 33 berita.
 
 Tata letaknya meniru koran kertas klasik: tanggal raksasa sebagai masthead,
-stat strip 6 angka, bar wilayah berwarna, 3 feature, 2 baris 6 berita, strip
-CRYPTO NEWS, peta dunia bertitik, strip timeline UTC, indeks brief bernomor
-21-34, kotak DATE CHECK & METHODOLOGY. Semua cerita terverifikasi dan unik,
-semua gambar kartun orisinal hasil code. Lead: COP31 runtuh tanpa
+stat strip 6 angka, bar wilayah berwarna, 2 feature, 2 baris 6 berita kecil,
+strip CRYPTO NEWS, peta dunia bertitik, strip timeline UTC, indeks brief
+bernomor 20-33, kotak DATE CHECK & METHODOLOGY. Semua cerita terverifikasi
+dan unik, semua gambar kartun orisinal hasil code. Lead: COP31 runtuh tanpa
 kesepakatan di Antalya.
 
 File ini stdlib-only (os, struct, zlib) dan hanya merakit aset yang sudah
 di-render sebelumnya di assets/ menjadi satu PNG deterministik 1024x1024.
-Urutan lapisannya: kertas, grain, ilustrasi, garis pemisah, lalu teks.
-Tidak ada timestamp dan tidak ada random, jadi setiap run menghasilkan
-byte yang sama persis.
+Urutan lapisannya: kertas, grain, ilustrasi, bingkai dan garis pemisah,
+lalu teks. Tidak ada timestamp dan tidak ada random, jadi setiap run
+menghasilkan byte yang sama persis.
 """
 
 import os
