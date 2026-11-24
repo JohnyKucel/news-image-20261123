@@ -1,4 +1,4 @@
-"""Entri make.fun news-image-20261123 v3: halaman depan koran broadsheet.
+"""Entri make.fun news-image-20261123 v4: halaman depan koran broadsheet.
 
 "Monday 23 November 2026 \u2014 35 dated stories, 7 regions: COP31 ends
 with no deal, 165 missiles over Ukraine, Bitcoin reclaims $61,368".
@@ -7,10 +7,14 @@ Konsep: satu hari, satu halaman, satu gambar. Grid 6 kolom, hairline
 1px, radius 0, newsprint #F1ECE0 + tinta #111111 + SATU warna spot
 merah (kicker, stempel NO DEAL, red topic bars, band CRYPTO NEWS).
 Masthead blackletter THE WORLD + ears + double rule. Lead COP31
-merentang 4 kolom dengan deck; hero-nya panel before/after dua panel
-(Sabtu "deal expected" vs Minggu "talks collapse") + stempel NO DEAL.
-Setiap cerita membawa tanggalnya (WED/THU/FRI/SAT/SUN 19-22 Nov 2026):
-2 feature + 12 berita kecil + 5 sel CRYPTO NEWS + 16 brief = 35 cerita
+headline 36pt satu baris, deck satu baris, body 2 baris per kolom;
+hero-nya panel before/after 976x190 selebar halaman penuh (Sabtu
+"deal expected", 3 delegasi besar tersenyum di meja perundingan, vs
+Minggu "talks collapse", 2 kursi kosong + pakta robek + 2 delegasi
+besar pergi sambil cemberut) + stempel NO DEAL di jahitan panel.
+Kyiv turun jadi small story; Brent turun jadi brief. Setiap cerita
+membawa tanggalnya (WED/THU/FRI/SAT/SUN 19-22 Nov 2026): 1 feature
++ 12 berita kecil + 5 sel CRYPTO NEWS + 17 brief = 35 cerita
 bertanggal, 7 region, peta + legenda, tabel timeline UTC, DATE CHECK.
 
 Semua angka dari riset 23 Nov 2026 (snapshot pagi 23 Nov: BTC $61,368,
@@ -44,59 +48,56 @@ TEXT = [
     ("t_stats.png", 28, 158),
     ("t_regions.png", 24, 196),
     ("t_feat0.png", 24, 222),
-    ("t_feat1.png", 681, 222),
-    ("t_small0_0.png", 24, 446),
-    ("t_small0_1.png", 188, 446),
-    ("t_small0_2.png", 352, 446),
-    ("t_small0_3.png", 516, 446),
-    ("t_small0_4.png", 680, 446),
-    ("t_small0_5.png", 844, 446),
-    ("t_small1_0.png", 24, 578),
-    ("t_small1_1.png", 188, 578),
-    ("t_small1_2.png", 352, 578),
-    ("t_small1_3.png", 516, 578),
-    ("t_small1_4.png", 680, 578),
-    ("t_small1_5.png", 844, 578),
-    ("t_crypto.png", 24, 708),
-    ("t_map.png", 24, 778),
-    ("t_timeline.png", 24, 910),
-    ("t_briefs.png", 374, 778),
-    ("t_datecheck.png", 804, 776),
+    ("t_small0_0.png", 24, 536),
+    ("t_small0_1.png", 188, 536),
+    ("t_small0_2.png", 352, 536),
+    ("t_small0_3.png", 516, 536),
+    ("t_small0_4.png", 680, 536),
+    ("t_small0_5.png", 844, 536),
+    ("t_small1_0.png", 24, 652),
+    ("t_small1_1.png", 188, 652),
+    ("t_small1_2.png", 352, 652),
+    ("t_small1_3.png", 516, 652),
+    ("t_small1_4.png", 680, 652),
+    ("t_small1_5.png", 844, 652),
+    ("t_crypto.png", 24, 764),
+    ("t_map.png", 24, 822),
+    ("t_timeline.png", 24, 926),
+    ("t_briefs.png", 374, 822),
+    ("t_datecheck.png", 804, 820),
     ("t_footband.png", 0, 1000),
 ]
 
 ART = [
-    ("illo_cop31_ba.png", 24, 350),
-    ("illo_russia_w.png", 682, 350),
-    ("illo_mexico_s.png", 27, 524),
-    ("illo_peru_s.png", 191, 524),
-    ("illo_trump_s.png", 355, 524),
-    ("illo_wallst_s.png", 519, 524),
-    ("illo_gta_s.png", 683, 524),
-    ("illo_korea_s.png", 847, 524),
-    ("illo_bepi_s.png", 27, 656),
-    ("illo_gaza_s.png", 191, 656),
-    ("illo_eisenkot_s.png", 355, 656),
-    ("illo_hormuz_s.png", 519, 656),
-    ("illo_brent_s.png", 683, 656),
-    ("illo_cricket_s.png", 847, 656),
+    ("illo_cop31_ba.png", 24, 336),
+    ("illo_mexico_s.png", 27, 612),
+    ("illo_peru_s.png", 191, 612),
+    ("illo_trump_s.png", 355, 612),
+    ("illo_wallst_s.png", 519, 612),
+    ("illo_gta_s.png", 683, 612),
+    ("illo_korea_s.png", 847, 612),
+    ("illo_bepi_s.png", 27, 728),
+    ("illo_gaza_s.png", 191, 728),
+    ("illo_eisenkot_s.png", 355, 728),
+    ("illo_hormuz_s.png", 519, 728),
+    ("illo_russia_w_s.png", 683, 728),
+    ("illo_cricket_s.png", 847, 728),
 ]
 
-BARS_H = [155, 216, 436, 570, 702, 772]
+BARS_H = [155, 216, 530, 646, 761, 817]
 
 BARS_V = [
-    (677, 222, 430),
-    (184, 444, 564),
-    (348, 444, 564),
-    (512, 444, 564),
-    (676, 444, 564),
-    (840, 444, 564),
-    (184, 576, 696),
-    (348, 576, 696),
-    (512, 576, 696),
-    (676, 576, 696),
-    (840, 576, 696),
-    (589, 778, 991),
+    (184, 532, 642),
+    (348, 532, 642),
+    (512, 532, 642),
+    (676, 532, 642),
+    (840, 532, 642),
+    (184, 648, 758),
+    (348, 648, 758),
+    (512, 648, 758),
+    (676, 648, 758),
+    (840, 648, 758),
+    (589, 822, 993),
 ]
 
 
@@ -333,8 +334,7 @@ def main():
         w, h, pixels, alpha = read_png(os.path.join(assets, name))
         paste(canvas, w, h, pixels, alpha, x, y)
 
-    frame(canvas, 24, 350, 666, 429, INK)
-    frame(canvas, 682, 350, 999, 424, INK)
+    frame(canvas, 24, 336, 999, 525, INK)
 
     for y in BARS_H:
         hbar(canvas, y, 1)
